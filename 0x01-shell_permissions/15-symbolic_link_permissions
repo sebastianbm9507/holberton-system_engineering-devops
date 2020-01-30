@@ -1,4 +1,4 @@
 #!/bin/bash
-chown -f betty:holberton _hello
+chown -h betty:holberton _hello
 
 
