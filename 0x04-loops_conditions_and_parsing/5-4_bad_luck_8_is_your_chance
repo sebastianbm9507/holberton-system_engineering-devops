@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
-n=0
-while (( n <= 9 ))
+#  Write a Bash script that loops from 1 to 10.
+n=1
+while (( n <= 10 ))
 do
-    if ((n == 3))
+    if ((n == 4))
     then
         echo "bad luck"
-    elif (( n == 7 ))
+    elif (( n == 8 ))
     then
         echo "good luck"
     else
         echo "Holberton School"
     fi
-    n=$((n+1))
+    (( n++ ))
 done
