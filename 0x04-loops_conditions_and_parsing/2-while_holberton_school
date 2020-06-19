@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# prints 10 times holberton school word
+n=0 #set n to 0
+
+while [ $n -le 10 ]
+do
+    echo "Holberton School"
+    n=$(( n + 1)) # increment n
+done
