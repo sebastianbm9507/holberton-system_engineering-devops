@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # script print 10 times Hoberton school word
-for (( i= 0 ; i <= 10; i++ ))
+for (( i= 0 ; i <= 9; i++ ))
 do
     echo "Holberton School"
 done
