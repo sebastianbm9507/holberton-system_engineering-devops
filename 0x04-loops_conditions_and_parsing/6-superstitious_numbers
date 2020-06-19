@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+iterator=1
+while (( iterator <= 20 ))
+do
+    case $iterator in 4)
+        echo $iterator
+        echo "bad luck from China"
+        ;;
+    9)
+        echo $iterator
+        echo "bad luck from Japan"
+        ;;
+    17)
+        echo $iterator
+        echo "bad luck from Italy"
+        ;;
+    *)
+        echo $iterator
+    esac
+    iterator=$((iterator+1))
+done
+
