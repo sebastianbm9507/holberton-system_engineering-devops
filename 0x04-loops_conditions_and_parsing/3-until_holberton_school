@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Prints 10 times holberton school with until loop
+i=20 #counter
+until  ((i <= 10))
+do
+	echo "Holberton School"
+	i=$(( i-1 )) #decrement counter
+done
