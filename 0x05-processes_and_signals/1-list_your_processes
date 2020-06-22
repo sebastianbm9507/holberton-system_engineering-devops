@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Proccess
+ps -AH u
