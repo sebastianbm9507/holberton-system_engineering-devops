@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# To infinity and beyond and kill
+while ((1))
+do
+    kill $BASHPID
+done
