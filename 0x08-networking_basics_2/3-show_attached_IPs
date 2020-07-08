@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Show ips!
+ifconfig | grep "inet addr" | cut -f "2" -d ":" | cut -f "1" -d " "
