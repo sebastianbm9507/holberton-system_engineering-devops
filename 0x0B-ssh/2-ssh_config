@@ -1,0 +1,6 @@
+#!/usr/bin/env bashi
+HOST 1621-web-01
+	HostName 35.231.155.83
+	user ubuntu
+	IdentityFile ~/.ssh/holberton
+	PasswordAuthentication no
