@@ -6,6 +6,6 @@ sudo apt-get -y install nginx
 # Enable PORT 80
 sudo ufw allow 'Nginx HTTP'
 # Create the file and add string
-sudo echo "Holberton School" >> /var/www/index.html
+sudo echo "Holberton School" > /var/www/html/index.html
 sudo service nginx start
 
