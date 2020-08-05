@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#install nginx web server
+
+sudo apt-get update
+sudo apt-get -y install nginx
+# Enable PORT 80
+sudo ufw allow 'Nginx HTTP'
+# Create the file and add string
+sudo echo "Holberton School for the win!" >> /var/www/index.html
+sudo service nginx start
+
