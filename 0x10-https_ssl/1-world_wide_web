@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # script that will display information about subdomains. 
 
-if [[ $# -eq 2 ]]
+if [ $# -eq 2 ]
 then
     domain="$1"
     subdomain="$2.$domain"
@@ -9,7 +9,7 @@ then
     RECORD=$(dig "$subdomain" | grep -A1 'ANSWER SECTION:' | awk '{printf $4}')
     echo  "The subdomain $2 is a $RECORD record and points to $IP"
 fi
-if [[ $# -eq 1 ]]
+if [ $# -eq 1 ]
 then
     for subdomain in 'www' 'lb-01' 'web-01' 'web-02'
     do
