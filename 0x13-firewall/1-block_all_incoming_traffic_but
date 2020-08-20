@@ -1,7 +1,6 @@
 sudo apt-get install ufw
-sudo  ufw start
-sudo ufw enable 
-sudo ufw default deny incoming
-sudo ufw allow 222
+sudo ufw start
+sudo ufw enable
+sudo ufw allow 22
 sufo ufw allow 443
 sudo ufw allow 80
