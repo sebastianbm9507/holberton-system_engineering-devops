@@ -5,16 +5,16 @@ if [ $# -eq 2 ]
 then
     domain="$1"
     subdomain="$2.$domain"
-    IP=$(dig "$subdomain" | grep -A1 'ANSWER SECTION:' | awk '{printf $5}')
-    RECORD=$(dig "$subdomain" | grep -A1 'ANSWER SECTION:' | awk '{printf $4}')
+    IP=$(dig "$subdomain" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+    RECORD=$(dig "$subdomain" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
     echo  "The subdomain $2 is a $RECORD record and points to $IP"
 elif [ $# -eq 1 ]
 then
     for subdomain in 'www' 'lb-01' 'web-01' 'web-02'
     do
         domain="$1"
-        IP=$(dig "$domain" | grep -A1 'ANSWER SECTION:' | awk '{printf $5}')
-        RECORD=$(dig "$domain" | grep -A1 'ANSWER SECTION:' | awk '{printf $4}')
+        IP=$(dig "$domain" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $5}')
+        RECORD=$(dig "$domain" | grep -A1 'ANSWER SECTION:' | tail -1 | awk '{print $4}')
         echo  "The subdomain $subdomain is a $RECORD record and points to $IP"
     done
 fi
