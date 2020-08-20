@@ -1,6 +1,6 @@
 sudo apt-get install ufw
-sudo systemctl start ufw
-sudo systemctl enable ufw
+sudo  ufw start
+sudo ufw enable 
 sudo ufw default deny incoming
 sudo ufw allow 222
 sufo ufw allow 443
