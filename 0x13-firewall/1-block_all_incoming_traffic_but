@@ -1,5 +1,4 @@
 sudo apt-get install ufw
-sudo ufw start
 sudo ufw enable
 sudo ufw allow 22
 sufo ufw allow 443
