@@ -23,7 +23,7 @@ if __name__ == "__main__":
         json_employee = employee_data.json()
         json_todos = employee_todos.json()
 
-        # Extracting TODO of employee
+        # Extracting TODO data of employee
         total_todos = 0
         done_todos = 0
         done_tasks = []
@@ -38,4 +38,4 @@ if __name__ == "__main__":
     '.format(json_employee['name'], done_todos, total_todos)
         print(text)
         for task in done_tasks:
-            print('\t{}'.format(task))
+            print('\t {}'.format(task))
