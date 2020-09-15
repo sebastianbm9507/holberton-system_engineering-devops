@@ -39,3 +39,9 @@ if __name__ == "__main__":
         print(text)
         for task in done_tasks:
             print('\t {}'.format(task))
+
+        # Using params I can filter 🎯
+        # emplo = requests.get('https://jsonplaceholder.typicode.com/users',
+        #                         params={'id':  user_id})
+        # tasks = requests.get('https://jsonplaceholder.typicode.com/todos',
+        #                      params={'userId':  user_id})
