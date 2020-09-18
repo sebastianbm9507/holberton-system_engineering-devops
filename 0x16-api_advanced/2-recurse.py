@@ -13,7 +13,7 @@ def recurse(subreddit, hot_list=[], after=None):
              .format(subreddit, after)
     header = {'User-Agent': 'PostmanRuntime/7.26.5'}
     data = requests.get(URL, headers=header).json()
-    if data.get('error') == 403:
+    if 'error' in data:
         return(None)
     else:
         detailed_data = data.get('data').get('children')
