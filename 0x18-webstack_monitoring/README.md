@@ -26,4 +26,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **Juan Sebastian Bueno** - [kael1706](https://github.com/untalsebastianb)
+* **Juan Sebastian Bueno** - [untalsebastianb](https://github.com/untalsebastianb)
